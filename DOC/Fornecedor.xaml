@@ -1,0 +1,32 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DOC.Fornecedor">
+
+    <ScrollView>
+        <StackLayout Spacing="20">
+            <Label Text="Cadastro de Fornecedor" FontSize="Title" HorizontalTextAlignment="Center" />
+
+            <Entry Placeholder="Nome" />
+            <Entry Placeholder="CPF/CNPJ" Keyboard="Numeric" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Entry Placeholder="Endereço" Grid.Column="0" />
+                <Entry Placeholder="Número" Grid.Column="1" />
+                <Entry Placeholder="Cidade" Grid.Column="0" />
+                <Entry Placeholder="Estado" Grid.Column="1" />
+                <Entry Placeholder="País" Grid.Column="0" />
+                <Entry Placeholder="CEP" Keyboard="Numeric" Grid.Column="1" />
+            </Grid>
+
+            <Entry Placeholder="Telefone" Keyboard="Telephone" />
+            <Entry Placeholder="Email" Keyboard="Email" />
+
+            <Button Text="Cadastrar" Clicked="Cadastrar_Clicked" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

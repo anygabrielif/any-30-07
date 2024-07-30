@@ -1,0 +1,28 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DOC.Produto">
+
+    <StackLayout Spacing="20">
+        <Label Text="Cadastro de Produto" FontSize="Title" HorizontalTextAlignment="Center" />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Código" />
+            <Entry x:Name="entryCodigo" Grid.Column="1" />
+            <Label Text="Nome" />
+            <Entry x:Name="entryNome" Grid.Column="1" />
+            <Label Text="Telefone" />
+            <Entry x:Name="entryTelefone" Keyboard="Telephone" Grid.Column="1" />
+            <Label Text="Endereço" />
+            <Entry x:Name="entryEndereco" Grid.Column="1" />
+            <Label Text="Estoque Atual" />
+            <Entry x:Name="entryEstoque" Keyboard="Numeric" Grid.Column="1" />
+        </Grid>
+
+        <Button Text="Enviar" Clicked="Enviar_Clicked" />
+    </StackLayout>
+</ContentPage>

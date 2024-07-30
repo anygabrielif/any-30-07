@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DOC.VendaDoProduto"
+             Title="Venda do Produto">
+
+    <ContentPage.Content>
+        <StackLayout Padding="30" VerticalOptions="CenterAndExpand">
+
+            <Label Text="Venda do produto"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <StackLayout Orientation="Vertical" Spacing="15">
+
+                <Label Text="Cliente:"/>
+                <Entry x:Name="clienteEntry" Placeholder="Nome do Cliente"/>
+
+                <Label Text="Produto:"/>
+                <Entry x:Name="produtoEntry" Placeholder="Nome do Produto"/>
+
+                <Label Text="Quantidade:"/>
+                <Entry x:Name="quantidadeEntry" Keyboard="Numeric" Placeholder="Quantidade"/>
+
+                <Button Text="Vender" 
+                        x:Name="venderButton" 
+                        BackgroundColor="LightGray"
+                        Clicked="OnVenderClicked"/>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

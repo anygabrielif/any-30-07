@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DOC.MateriaPrima">
+
+    <StackLayout Spacing="20">
+        <Label Text="Cadastro de Matéria-Prima" FontSize="Title" HorizontalTextAlignment="Center" />
+
+        <Entry Placeholder="Nome" />
+        <Entry Placeholder="Telefone" Keyboard="Telephone" />
+        <Entry Placeholder="Quantidade" Keyboard="Numeric" />
+        <Entry Placeholder="Endereço" />
+
+        <Button Text="Enviar" Clicked="Enviar_Clicked" />
+    </StackLayout>
+</ContentPage>
