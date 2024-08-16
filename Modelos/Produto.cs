@@ -1,26 +1,14 @@
+using LiteDB;
+
 namespace Modelos;
-
-public class Produto : Pessoa
+public class Vendas 
 {
-    string codigo;
-    string estoque;
+     public string produto{ get; set; }
+     public string quantidade{ get; set; }
+     public string lucro{ get; set; }
+     public string cliente{ get; set; }
 
-    public string Getcodigo ()
-    {
-        return codigo;
-    }
-    public void Setcodigo (string cod)
-    {
-        codigo=cod;
-    }
+     [BsonId]
+     public int id{ get; set; }
 
-     public string Getestoque ()
-    {
-        return estoque;
-    }
-    public void Setestoque (string est)
-    {
-        estoque=est;
-    }
-    
 }

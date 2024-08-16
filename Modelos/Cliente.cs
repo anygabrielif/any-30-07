@@ -1,16 +1,5 @@
-public class Acabamento : Pessoa
+namespace Modelos;
+public class Cliente : Pessoa
 {
-
- string CPF;
-
- public void GetCPF ()
-
-{
-     return CPF;
-}
-public void SetCPF (string n)
-{
-    CPF=string n;
-}
-
+string CPF { get; set;}
 }
