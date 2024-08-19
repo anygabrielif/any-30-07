@@ -1,4 +1,4 @@
-﻿namespace Any_30_07;
+﻿namespace any3007;
 
 public partial class MainPage : ContentPage
 {

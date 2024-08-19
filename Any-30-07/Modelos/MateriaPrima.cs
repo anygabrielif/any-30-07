@@ -7,6 +7,5 @@ public class Materiaprima
      public string endereço{ get; set; }
      public string quantidade{ get; set; }
 
-     [BsonId]
       public int id{ get; set; }
 }

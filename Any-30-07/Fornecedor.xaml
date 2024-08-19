@@ -1,19 +1,15 @@
-<ContentPage xmlns="http://xamarin.com/schemas/2020/toolkit"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DOC.Fornecedor">
-
-    <?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LiteDBExample.ListaClientesPage"
+             x:Class="any3007.FornecedorPage"
              BackgroundColor="LightBlue"
              Title="Cadastrar Fornecedor">
   <VerticalStackLayout>
-  <Button Text="Criar Novo Cliente"
-          BackgroundColor="Orange"
-          FontSize="16"
-          TextColor="Black"
-          Clicked="NovoClienteClicked"/>
+    <Button Text="Criar Novo Cliente"
+            BackgroundColor="Orange"
+            FontSize="16"
+            TextColor="Black"
+            Clicked="NovoClienteClicked"/>
     <ListView x:Name="ListaClientes"
               HasUnevenRows="True"
               ItemSelected="QuandoSelecionarUmItemNaLista"
@@ -23,16 +19,16 @@
         <DataTemplate>
           <ViewCell>
             <VerticalStackLayout Padding="20"
-                                BackgroundColor="Pink">
+                                 BackgroundColor="Pink">
               <HorizontalStackLayout>
                 <Label Text="{Binding Nome}"
-                      FontSize="20"/>
+                       FontSize="20"/>
                 <Label Text="{Binding Sobrenome}"
-                      FontSize="20"
-                      Margin="10,0,0,0"/>
+                       FontSize="20"
+                       Margin="10,0,0,0"/>
               </HorizontalStackLayout>
               <Label Text="{Binding Telefone}"
-                      FontSize="20"/>
+                     FontSize="20"/>
             </VerticalStackLayout>
           </ViewCell>
         </DataTemplate>
