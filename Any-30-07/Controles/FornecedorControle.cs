@@ -4,14 +4,14 @@ namespace Controles;
 
 public class FornecedorControle : BaseControle
 {
-  //----------------------------------------------------------------------------
+  
 
   public FornecedorControle() : base()
   {
     NomeDaTabela = "Fornecedor";
   }
 
-  //----------------------------------------------------------------------------
+  
 
   public virtual Registro? Ler(int idFornecedor)
   {
@@ -19,7 +19,7 @@ public class FornecedorControle : BaseControle
     return collection.FindOne(d => d.Id == idFornecedor);
   }
 
-  //----------------------------------------------------------------------------
+  
 
   public virtual List<Fornecedor>? LerTodos()
   {
@@ -27,7 +27,7 @@ public class FornecedorControle : BaseControle
     return new List<Fornecedor>(tabela.FindAll());
   }
 
-  //----------------------------------------------------------------------------
+  
 
   public virtual void Apagar(int idFornecedor)
   {
@@ -35,13 +35,13 @@ public class FornecedorControle : BaseControle
     collection.Delete(idFornecedor);
   }
 
-  //----------------------------------------------------------------------------
+ 
 
-  public virtual void CriarOuAtualizar(Fornecedor cliente)
+  public virtual void CriarOuAtualizar(Fornecedor fornecedor)
   {
     var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
-    collection.Upsert(Fornecedor);
+    collection.Upsert(fornecedor);
   }
 
-  //----------------------------------------------------------------------------
+  
 }

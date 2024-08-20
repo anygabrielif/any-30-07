@@ -4,14 +4,14 @@ namespace Controles;
 
 public class CostureiraControle : BaseControle
 {
-  //----------------------------------------------------------------------------
+  
 
   public CostureiraControle() : base()
   {
     NomeDaTabela = "Costureira";
   }
 
-  //----------------------------------------------------------------------------
+  
 
   public virtual Registro? Ler(int idCostureira)
   {
@@ -19,7 +19,7 @@ public class CostureiraControle : BaseControle
     return collection.FindOne(d => d.Id == idCostureira);
   }
 
-  //----------------------------------------------------------------------------
+  
 
   public virtual List<Costureira>? LerTodos()
   {
@@ -27,7 +27,7 @@ public class CostureiraControle : BaseControle
     return new List<Costureira>(tabela.FindAll());
   }
 
-  //----------------------------------------------------------------------------
+  
 
   public virtual void Apagar(int idCostureira)
   {
@@ -35,7 +35,7 @@ public class CostureiraControle : BaseControle
     collection.Delete(idCostureira);
   }
 
-  //----------------------------------------------------------------------------
+  
 
   public virtual void CriarOuAtualizar(Costureira Costureira)
   {
@@ -43,5 +43,5 @@ public class CostureiraControle : BaseControle
     collection.Upsert(Costureira);
   }
 
-  //----------------------------------------------------------------------------
+  
 }

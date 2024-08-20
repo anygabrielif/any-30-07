@@ -1,12 +1,14 @@
 using LiteDB;
 
 namespace Modelos;
-public class Pessoa : Pessoa
+public class Pessoa : Registro
 {
-   [BsonId]
-   public int Id{ get; set; }
-   public string nome{ get; set; }
-  public string endereço{ get; set; }
-   public string telefone{ get; set; }
+public string Nome { get; set; }
+public string Endereço { get; set; }
+public string telefone { get; set; }
+  [BsonId]
+public int Id { get; set; }
 
 }
+
+

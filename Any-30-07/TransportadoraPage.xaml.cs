@@ -8,20 +8,21 @@ namespace any3007
         {
             InitializeComponent();
         }
+        
 
-        private void OnSubmitClicked(object sender, EventArgs e)
+        private void SubmitClicked(object sender, EventArgs e)
         {
             ConfirmationDialog.IsVisible = true;
         }
 
-        private void OnYesClicked(object sender, EventArgs e)
+        private void YesClicked(object sender, EventArgs e)
         {
-            // Handle confirmation and submission logic here
+           
             ConfirmationDialog.IsVisible = false;
             DisplayAlert("Success", "Form submitted successfully!", "OK");
         }
 
-        private void OnNoClicked(object sender, EventArgs e)
+        private void NoClicked(object sender, EventArgs e)
         {
             ConfirmationDialog.IsVisible = false;
         }

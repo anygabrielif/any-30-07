@@ -9,12 +9,12 @@ namespace any3007
             InitializeComponent();
         }
     
-        private async void OnVenderClicked(object sender, EventArgs e)
+        private async void OnVendasClicked(object sender, EventArgs e)
         {
             bool answer = await DisplayAlert("Confirmação", "Tem certeza que deseja vender?", "Sim", "Não");
             if (answer)
             {
-                // Implementar a lógica de venda aqui
+                
                 await DisplayAlert("Vendido", "Produto vendido com sucesso!", "OK");
             }
         }
